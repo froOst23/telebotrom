@@ -1,1 +1,1 @@
-print('World')
+print(67888)
