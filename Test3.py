@@ -1,3 +1,1 @@
-'''
-qwerty
-'''
+print('Hellow World')
