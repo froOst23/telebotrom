@@ -1,8 +1,13 @@
 import os
 
+import requests
 import telebot
+from bs4 import BeautifulSoup
 
 TOKEN = os.environ['TOKEN']
+URL = 'https://www.sports.ru/roma/calendar/'
+response = requests.get(URL)
+soup = BeautifulSoup(response.content, 'html.parser')
 
 bot = telebot.TeleBot(token=TOKEN)
 
